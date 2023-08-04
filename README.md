@@ -7,6 +7,7 @@ This GitHub repository contains a functional TODO List web application built usi
 
 - Add Task: Easily add new tasks to the TODO list using the input field and the "Add" button.
 - Delete Task: Remove completed or unwanted tasks from the list with a simple click on the trash icon.
+- Read Task: Easily read the added tasks to the TODO list.
 - Responsive Design: The application is designed to adapt seamlessly to different screen sizes, providing a consistent experience across devices.
 - Local Storage: All tasks are automatically stored in the browser's local storage, ensuring data persistence between sessions.
 - Minimalistic UI: A clean and intuitive user interface that focuses on ease of use and clarity.
@@ -21,4 +22,4 @@ This GitHub repository contains a functional TODO List web application built usi
 
 ### Live Site
 
-[To-Do_List] (http://localhost:3000)
+[To-Do-List](https://to-do-list-byhiro.vercel.app/)
