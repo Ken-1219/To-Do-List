@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.main {
+    /* background-color: rgb(136, 136, 239); */
+    background-color: rgb(70, 70, 142);
+    height: 100vh;
+    width: 100%;
+}
+
+
+.container {
+    height: 35rem;
+    width: 30rem;
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+
+#heading {
+    margin-bottom: 2rem;
+}
+
+.input {
+    height: 2rem;
+    width: 20rem;
+    padding: 1rem;
+    background-color: aliceblue;
+    margin-right: 5px;
+    border: 1px solid rgb(30, 48, 80);
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: rgb(70, 69, 73);
+    font-size: 0.8rem;
+}
+
+.input:focus {
+    border: 2px solid rgb(8, 34, 82);
+    transform: translateY(-2px);
+    transition: ease 0.1s;
+
+}
+
+.btn {
+    margin-top: 3px;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(30, 48, 80);
+    color: white;
+
+}
+
+.btn:hover {
+    background-color: rgb(32, 61, 116);
+    transform: translateY(-1px);
+    transition: ease 0.1s;
+}
+
+ol {
+    list-style: none;
+    color: rgb(32, 61, 116);
+    font-weight: 500;
+    text-align: left;
+    
+}
+
+li {
+    margin: 0.75rem;
+    display: flex;
+}
+
+
+.list-icon {
+    margin: 0 5px;
+    color: rgb(30, 48, 80);
+    cursor: pointer;
+}
+
+div #listIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.taskContainer{
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+.taskContainer::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+@media (max-width: 600px){
+    body{
+        background-color: aliceblue;
+    }
+
+    .main {
+        background-color: aliceblue;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .input{
+        width: 15rem;
+    }
+
+    li{
+        width: 15rem;
+    }
+
+    .taskContainer{
+        height: 28rem;
+        overflow-y: scroll;
+    }
+
+}
+
+
+@media (max-width: 400px){
+    body{
+        background-color: aliceblue;
+    }
+
+    .main {
+        background-color: aliceblue;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .input{
+        width: 12rem;
+    }
+
+    li{
+        width: 15rem;
+    }
+
+    .taskContainer{
+        height: 28rem;
+        overflow-y: scroll;
+    }
+}
+
