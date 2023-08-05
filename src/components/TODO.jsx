@@ -94,12 +94,6 @@ function Main() {
                                             id='delete'
                                             className='list-icon'
                                             onClick={() => deleteTask(index)} />
-                                        {/* Update Icon */}
-
-                                        <FontAwesomeIcon
-                                            icon={faPenToSquare}
-                                            className='list-icon'
-                                            id='update' />
                                     </div>
 
                                     {/* Task appears here */}
