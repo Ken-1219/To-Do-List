@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClipboardList, faTrash, faPenToSquare, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faClipboardList, faTrash, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Main() {
 
