@@ -1,7 +1,7 @@
 ### Repository Name: Todo List
 
 ### Description
-This GitHub repository contains a functional TODO List web application built using React.js and leveraging the power of React Hooks. The app allows users to create, read and delete tasks, with the data being stored in the browser's local storage, ensuring persistent data even after a page refresh.
+A functional TODO List web application built using React.js and leveraging the power of React Hooks. The app allows users to create, read and delete tasks, with the data being stored in the browser's local storage, ensuring persistent data even after a page refresh.
 
 ### Features
 
