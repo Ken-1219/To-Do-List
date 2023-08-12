@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Rubik', sans-serif;
+    overflow: hidden;
 }
 
 .main {
@@ -32,11 +33,14 @@ body {
 
 .icon {
     margin-right: 10px;
+    height: 40px;
+    width: 40px;
 }
 
 
 #heading {
     margin-bottom: 2rem;
+    color: rgb(51, 70, 102);
 }
 
 .input {
@@ -49,6 +53,7 @@ body {
     outline: none;
     border-radius: 10px;
     text-align: center;
+    text-transform: capitalize;
 }
 
 input::placeholder {
@@ -58,9 +63,6 @@ input::placeholder {
 
 .input:focus {
     border: 2px solid rgb(8, 34, 82);
-    transform: translateY(-2px);
-    transition: ease 0.1s;
-
 }
 
 .btn {
@@ -77,8 +79,6 @@ input::placeholder {
 
 .btn:hover {
     background-color: rgb(32, 61, 116);
-    transform: translateY(-1px);
-    transition: ease 0.1s;
 }
 
 ol {
@@ -101,6 +101,10 @@ li {
     cursor: pointer;
 }
 
+#delete:hover{
+    color: red;
+}
+
 div #listIcons {
     display: flex;
     flex-direction: row;
@@ -111,8 +115,9 @@ div #listIcons {
 .items {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 2rem;
+    text-transform: capitalize;
 }
 
 .taskContainer{

@@ -1,8 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClipboardList, faTrash, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import addSound from './Sounds/item_added.mp3';
 
-function Main() {
+function Main({ logo }) {
 
     const list = useRef(null);  //setting reference to the list
 
@@ -19,8 +22,10 @@ function Main() {
             const newTask = newTaskText;
             setTask([...tasks, newTask]);
             setNewTaskText(''); // Clear the input field after adding a task
+            toast.success('Item Added !!!');
+            const audio = new Audio(addSound);
+            audio.play();
         }
-
     };
 
     //adding task to local storage whenever there is any change in tasks
@@ -43,7 +48,18 @@ function Main() {
         const updatedTasks = tasks.filter((_, currIndex) => currIndex !== index);
         // _ denotes an ignorable argument as this argument is not used for filtering
         setTask(updatedTasks);
+        toast(' ❌ Item Deleted !!!');
+
     };
+
+
+
+    //add on enter
+    const addOnEnter = (e) => {
+        if (e.key === 'Enter') {
+            addTask();
+        }
+    }
 
 
 
@@ -53,12 +69,11 @@ function Main() {
             <div className='container' id='container'>
                 <nav className='top'>
                     {/* Heading */}
+                    <img src={logo} alt="logo" className='logo icon' />
                     <h1
                         className='heading'
-                        id='heading'
-                        style={{ color: "rgb(30, 48, 80)", }}>
-                        <FontAwesomeIcon icon={faClipboardList} className='icon' />
-                        To-Do List
+                        id='heading'>
+                        Task-Wave
                     </h1>
 
                     {/* Manage Input Here */}
@@ -67,8 +82,11 @@ function Main() {
                         className='input'
                         placeholder='Add an Item'
                         value={newTaskText}
-                        onChange={(e) => setNewTaskText(e.target.value)}>
+                        onChange={(e) => setNewTaskText(e.target.value)}
+                        onKeyUp={addOnEnter}
+                    >
                     </input>
+
 
                     <button
                         className='btn'
@@ -76,6 +94,7 @@ function Main() {
                         onClick={addTask}>
                         <FontAwesomeIcon icon={faPlus} id='add' />
                     </button>
+
                 </nav>
 
 
@@ -104,6 +123,17 @@ function Main() {
                         </ol>
                     </div>
                 </div>
+            <ToastContainer
+                position="bottom-center"
+                autoClose={1000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
             </div>
         </main>
     )
