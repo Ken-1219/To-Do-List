@@ -1,7 +1,8 @@
 ### Repository Name: Todo List
 
 ### Description
-A functional TODO List web application built using React.js and leveraging the power of React Hooks. The app allows users to create, read and delete tasks, with the data being stored in the browser's local storage, ensuring persistent data even after a page refresh.
+- A functional TODO List web application built using React.js and leveraging the power of React Hooks. The app allows users to create, read and delete tasks, with the data being stored in the browser's local storage, ensuring persistent data even after a page refresh.
+- An extension for this has been published on the Microsoft Add-On Store.
 
 ### Features
 
@@ -19,7 +20,8 @@ A functional TODO List web application built using React.js and leveraging the p
 - Font Awesome: Icons from the Font Awesome library enhance the visual appeal and provide intuitive cues for user interactions.
 - Responsive CSS: The app is made fully responsive using CSS media queries, ensuring a consistent experience on various devices and screen sizes.
 - Semantic HTML 5
+- React Toastify : Used React Toastify to produce alerts while adding or deleting items
 
-### Live Site
-
-[To-Do-List](https://to-do-list-byhiro.vercel.app/)
+### Live
+ - Live-Site : https://to-do-list-byhiro.vercel.app/
+ - Microsoft Edge Add-On : https://microsoftedge.microsoft.com/addons/detail/task-wave/aefkdmcnnmbeiighpfllhclkndaflclh
