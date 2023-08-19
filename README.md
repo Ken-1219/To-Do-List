@@ -24,4 +24,4 @@
 
 ### Live
  - Live-Site : https://to-do-list-byhiro.vercel.app/
- - Microsoft Edge Add-On : https://microsoftedge.microsoft.com/addons/detail/todo-list/aefkdmcnnmbeiighpfllhclkndaflclh
+ - Microsoft Edge Add-On : https://microsoftedge.microsoft.com/addons/detail/task-wave/aefkdmcnnmbeiighpfllhclkndaflclh
