@@ -182,7 +182,7 @@ div #listIcons {
 
     .taskContainer{
         height: 28rem;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
 }
@@ -214,7 +214,7 @@ div #listIcons {
 
     .taskContainer{
         height: 28rem;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 }
 
