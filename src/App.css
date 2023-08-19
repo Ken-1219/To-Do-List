@@ -86,7 +86,8 @@ ol {
     color: rgb(32, 61, 116);
     font-weight: 500;
     text-align: left;
-    
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -94,6 +95,15 @@ li {
     display: flex;
 }
 
+li:hover{
+    font-weight: 900;
+    transition: ease-out 0.2s;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(216, 227, 248);
+    border: none;
+    color: cornflowerblue;
+}
 
 .list-icon {
     margin: 0 5px;
@@ -116,18 +126,33 @@ div #listIcons {
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 2rem;
+    padding: 1rem;
     text-transform: capitalize;
 }
 
 .taskContainer{
     height: 20rem;
-    overflow-y: scroll;
+    width: 21rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* Scroll-Bar Animation */
+.taskContainer::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+    border-radius: 10px;
+}
+.taskContainer::-webkit-scrollbar {
+    width: 6px;
+	background-color: #F5F5F5;
+}
+.taskContainer::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+	background-color: rgb(55, 55, 106);
 }
 
-.taskContainer::-webkit-scrollbar{
-    display: none;
-}
 
 
 
